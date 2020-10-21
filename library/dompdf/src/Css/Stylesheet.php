@@ -2,7 +2,7 @@
 /**
  * @package tag_Dompdf
  * @link    http://dompdf.github.com/
- * @author  tag  Benj Carson <benjcarson@digitaljunkies.ca>
+ * @author   tag  Benj Carson <benjcarson@digitaljunkies.ca>
  * @author  Helmut Tischer <htischer@weihenstephan.org>
  * @author  Fabien Ménager <fabien.menager@gmail.com>
  * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
