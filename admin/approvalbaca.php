@@ -91,7 +91,7 @@ include '../koneksi.php';
                 <button type="submit" class="btn btn-success" style="text-align:center">Approved</button>
                  <div class="modal-footer">
                 </div>
-				<input type="hidden" name="id" value="<?= $id ?>">
+		 <input type="hidden" name="id" value="<?= $id ?>">
                 <?php
               }
 
