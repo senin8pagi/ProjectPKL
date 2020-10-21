@@ -16,9 +16,9 @@
 
  	<?php 
   if(isset($_GET['transaksi_tanggal']) && isset($_GET['kprk']) && isset($_GET['regional'])){
-  $tgl_trx    =     $_GET['transaksi_tanggal'];
-  $kprk       =     $_GET['kprk'];
-  $regional   =     $_GET['regional'];
+  $tgl_trx      =      $_GET['transaksi_tanggal'];
+  $kprk      =      $_GET['kprk'];
+  $regional      =      $_GET['regional'];
   ?>
 
  		<div class="row">
