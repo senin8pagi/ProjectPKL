@@ -1,8 +1,8 @@
 <?php
 /**
- * @package dompdf
+ * @package Dompdf
  * @link    http://dompdf.github.com/
- * @author  Benj Carson <benjcarson@digitaljunkies.ca>
+ * @author tag  Benj Carson <benjcarson@digitaljunkies.ca>
  * @author  Helmut Tischer <htischer@weihenstephan.org>
  * @author  Fabien Ménager <fabien.menager@gmail.com>
  * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
@@ -183,7 +183,7 @@ class Stylesheet
     /**
      * Set the base protocol
      *
-     * @param string $protocol
+     * @parameter string $protocol
      */
     function set_protocol($protocol)
     {
@@ -193,7 +193,7 @@ class Stylesheet
     /**
      * Set the base host
      *
-     * @param string $host
+     * @parameter string $host
      */
     function set_host($host)
     {
