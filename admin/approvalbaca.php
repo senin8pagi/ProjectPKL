@@ -30,7 +30,7 @@ require_once '../koneksi.php';
               <?php 
               $id = $_GET['id'];              
               $data = mysqli_query($koneksi, "SELECT * FROM approval as a, t_pegawailoket as b where a.pegawai_id=b.pegawai_id and a.pegawai_id=$id");
-              while($d = mysqli_fetch_array($data)){
+              while ($d = mysqli_fetch_array($data)) {
                 ?>
 
                  <div class="form-group">
@@ -91,7 +91,7 @@ require_once '../koneksi.php';
                 <button type="submit" class="btn btn-success" style="text-align:center">Approved</button>
                  <div class="modal-footer">
                 </div>
-		 <input type="hidden" name="id" value="<?= $id ?>">
+	              <input type="hidden" name="id" value="<?= $id ?>">
                 <?php
               }
 
