@@ -1,6 +1,6 @@
 ` <?php 
-include 'header.php';
-include '../koneksi.php';
+require_once 'header.php';
+require_once '../koneksi.php';
 ?>
 
 <div class="content-wrapper">
@@ -106,4 +106,4 @@ include '../koneksi.php';
   </section>
 
 </div>
-<?php include 'footer.php'; ?>
+<?php require_once 'footer.php'; ?>
