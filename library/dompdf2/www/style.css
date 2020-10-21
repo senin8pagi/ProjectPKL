@@ -1,7 +1,8 @@
-body, select {
+body, 
+select {
   color: #7d7a7a;
   font-family: 'trebuchet ms', verdana, sans-serif;
-	font-size: 13px;
+  font-size: 13px;
 }
 
 a:link, a:visited, a:active { 
