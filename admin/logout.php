@@ -3,6 +3,7 @@
  * Short description here.
  *
  * PHP version 5
+ * @category Foo
  */
 
 session_start();
