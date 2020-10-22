@@ -61,13 +61,13 @@ $query = "
 	   where a.pegawai_id=b.pegawai_id and b.KPRK=c.kodekantor and date(transaksi_tanggal)>='$tgl_dari' 
 	   and date(transaksi_tanggal)<='$tgl_sampai'";
 	   
- if ($kprk != '00' && $kprk!='') {                                 
+if ($kprk != '00' && $kprk!='') {                                 
     $query .= "and b.KPRK = '$kprk'";
-  };
+ };
 
- if ($regional !='') {                                 
+if ($regional !='') {                                 
     $query .= "and a.ref_regional  = '$regional'";
-  };
+ };
 
 $data = mysqli_query($koneksi, $query);
 
@@ -86,16 +86,16 @@ if($d['nominal_tagihan']){
     $pdf->Cell(20, 7, $d['jmlTrx'] , 1, 0, 'C');
 
 if ($d['nominal_tagihan']){
-    $money = "Rp. ".number_format($d['nominal_tagihan'])." ,-";
+        $money = "Rp. ".number_format($d['nominal_tagihan'])." ,-";
 }
 
-    $pdf->Cell(30, 7, $money, 1, 0, 'C');
+        $pdf->Cell(30, 7, $money, 1, 0, 'C');
 
   if($d['nominal_tagihan']){
-    $tot = "Rp. ".number_format($total_uang * $total_uangs)." ,-";
+        $tot = "Rp. ".number_format($total_uang * $total_uangs)." ,-";
 }
-    $pdf->Cell(20, 7, $d['pegawai_pos'] , 1, 0, 'C');
-    $pdf->Cell(30, 7, $tot, 1, 1, 'C');
+        $pdf->Cell(20, 7, $d['pegawai_pos'] , 1, 0, 'C');
+        $pdf->Cell(30, 7, $tot, 1, 1, 'C');
   
 
 }
