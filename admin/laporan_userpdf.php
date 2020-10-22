@@ -88,15 +88,15 @@ if($d['nominal_tagihan']){
   if ($d['nominal_tagihan']) {
   $tot = "Rp. ".number_format($total_uang * $total_uangs)." ,-";
 }
-  $pdf->Cell(35, 7, $tot, 1, 0, 'C');
+    $pdf->Cell(35, 7, $tot, 1, 0, 'C');
 
 if ($d['nominal_tagihan']) {
   $money = "Rp. ".number_format($d['nominal_tagihan'])." ,-";
 }
 
-  $pdf->Cell(30, 7, $money, 1, 0, 'C');
-  $pdf->Cell(20, 7, $d['pegawai_pos'] , 1, 0, 'C');
-  $pdf->Cell(30, 7, $tot,1,1,'C');
+    $pdf->Cell(30, 7, $money, 1, 0, 'C');
+    $pdf->Cell(20, 7, $d['pegawai_pos'], 1, 0, 'C');
+    $pdf->Cell(30, 7, $tot, 1, 1,'C');
 
 
 }
