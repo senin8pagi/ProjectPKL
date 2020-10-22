@@ -22,15 +22,14 @@ $pdf->Cell(280, 7, 'LAPORAN TRANSAKSI', 0, 1, 'C');
 
 // Memberikan space kebawah agar tidak terlalu rapat
 $pdf->Cell(10, 7, '', 0, 1);
-$pdf->SetFont('Arial' , 'B', 10);
-
+$pdf->SetFont('Arial', 'B', 10);
 $pdf->Cell(35, 6, 'DARI TANGGAL', 0, 0);
 $pdf->Cell(5, 6, ':', 0, 0);
-$pdf->Cell(35, 6, date('d-m-Y', strtotime($tgl_dari)) , 0, 0);
+$pdf->Cell(35, 6, date('d-m-Y', strtotime($tgl_dari)), 0, 0);
 $pdf->Cell(10, 7, '', 0, 1);
 $pdf->Cell(35, 6, 'SAMPAI TANGGAL', 0, 0);
 $pdf->Cell(5, 6, ':', 0, 0);
-$pdf->Cell(35, 6, date('d-m-Y', strtotime($tgl_sampai)) , 0, 0);
+$pdf->Cell(35, 6, date('d-m-Y', strtotime($tgl_sampai)), 0, 0);
 $pdf->Cell(10, 7, '', 0, 1);
 $pdf->Cell(35, 6, 'DESKRIPSI : REKAP PER KANTOR', 0, 0);
 $pdf->Cell(5, 6, '', 0, 0);
@@ -62,7 +61,7 @@ $query = "
 	   and date(transaksi_tanggal)<='$tgl_sampai'";
 	   
 if ($kprk != '00' && $kprk!='') {                                 
-    $query .= "and b.KPRK = '$kprk'";
+  $query .= "and b.KPRK = '$kprk'";
  };
 
 if ($regional !='') {                                 
