@@ -61,7 +61,7 @@ $query = "
 	   and date(transaksi_tanggal)<='$tgl_sampai'";
 	   
 if ($kprk != '00' && $kprk!='') {                                 
-  $query .= "and b.KPRK = '$kprk'";
+    $query .= "and b.KPRK = '$kprk'";
  };
 
 if ($regional !='') {                                 
