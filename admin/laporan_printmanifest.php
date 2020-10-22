@@ -62,7 +62,7 @@
             $query = "SELECT a.*, b.* FROM transaksi as a,t_pegawailoket as b where a.pegawai_id=b.pegawai_id  and date(transaksi_tanggal) ='$tgl_trx'";
 
          if ($kprk != '00' && $kprk!='') {                                 
-         $query .= "and b.KPRK = '$kprk'";
+            $query .= "and b.KPRK = '$kprk'";
          };
             
             if ($regional !='') {                                 
