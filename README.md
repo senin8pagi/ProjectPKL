@@ -1,2 +1,2 @@
 # Dashboard
-Sistem Dashboard pada sebuah web transaksi dan pengarsipan.
+Sistem Dashboard pada sebuah web transaksi dan pengarsipan .
